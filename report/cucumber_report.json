@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1330917199
+              "duration": 1676999899
             }
           },
           {
@@ -32,7 +32,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10004180500
+              "duration": 105200
             }
           },
           {
@@ -41,11 +41,24 @@
             "line": 6,
             "name": "I get all the data returned from the API",
             "match": {
-              "location": "features\\step-definitions\\steps.js:23"
+              "location": "features\\step-definitions\\steps.js:20"
             },
             "result": {
               "status": "passed",
-              "duration": 1617799
+              "duration": 701400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I wait for \"10\" seconds before next call",
+            "match": {
+              "location": "features\\step-definitions\\steps.js:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10015304799
             }
           }
         ],
@@ -56,47 +69,60 @@
         "description": "",
         "id": "to-test-the-api-crud-operations;get-employee-details-by-employee-id",
         "keyword": "Scenario Outline",
-        "line": 14,
+        "line": 16,
         "name": "Get employee details by employee id",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 9,
+            "line": 10,
             "name": "I make a get all call with emp id as \"1\"",
             "match": {
-              "location": "features\\step-definitions\\steps.js:28"
+              "location": "features\\step-definitions\\steps.js:25"
             },
             "result": {
               "status": "passed",
-              "duration": 1122838800
+              "duration": 1134918099
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 10,
+            "line": 11,
             "name": "The call completes",
             "match": {
               "location": "features\\step-definitions\\steps.js:17"
             },
             "result": {
               "status": "passed",
-              "duration": 10013738700
+              "duration": 134999
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 11,
+            "line": 12,
             "name": "I get the employee details for the emp no \"1\"",
             "match": {
-              "location": "features\\step-definitions\\steps.js:32"
+              "location": "features\\step-definitions\\steps.js:29"
             },
             "result": {
               "status": "failed",
-              "duration": 2660199,
-              "error_message": "AssertionError: expected 429 to equal 'success'\n    at World.<anonymous> (C:\\Users\\Deepa\\Workspace\\API Testing\\features\\step-definitions\\steps.js:33:35)"
+              "duration": 1135600,
+              "error_message": "AssertionError: expected 429 to equal 'success'\n    at World.<anonymous> (C:\\Users\\Deepa\\Workspace\\API Testing\\features\\step-definitions\\steps.js:30:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I wait for \"10\" seconds before next call",
+            "match": {
+              "location": "features\\step-definitions\\steps.js:59"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
             }
           }
         ],
@@ -107,7 +133,7 @@
         "description": "",
         "id": "to-test-the-api-crud-operations;create-a-new-employee",
         "keyword": "Scenario Outline",
-        "line": 25,
+        "line": 28,
         "name": "Create a new employee",
         "steps": [
           {
@@ -136,41 +162,54 @@
               }
             ],
             "keyword": "Given ",
-            "line": 17,
+            "line": 19,
             "name": "I make a create call with employee details",
             "match": {
-              "location": "features\\step-definitions\\steps.js:37"
+              "location": "features\\step-definitions\\steps.js:34"
             },
             "result": {
               "status": "passed",
-              "duration": 1068032499
+              "duration": 1117582400
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 21,
+            "line": 23,
             "name": "The call completes",
             "match": {
               "location": "features\\step-definitions\\steps.js:17"
             },
             "result": {
               "status": "passed",
-              "duration": 10006637599
+              "duration": 130099
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 22,
+            "line": 24,
             "name": "The new employee gets created",
             "match": {
-              "location": "features\\step-definitions\\steps.js:41"
+              "location": "features\\step-definitions\\steps.js:38"
             },
             "result": {
               "status": "failed",
-              "duration": 966099,
-              "error_message": "AssertionError: expected 429 to equal 'success'\n    at World.<anonymous> (C:\\Users\\Deepa\\Workspace\\API Testing\\features\\step-definitions\\steps.js:42:35)"
+              "duration": 599100,
+              "error_message": "AssertionError: expected 429 to equal 'success'\n    at World.<anonymous> (C:\\Users\\Deepa\\Workspace\\API Testing\\features\\step-definitions\\steps.js:39:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "I wait for \"10\" seconds before next call",
+            "match": {
+              "location": "features\\step-definitions\\steps.js:59"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
             }
           }
         ],
@@ -181,7 +220,7 @@
         "description": "",
         "id": "to-test-the-api-crud-operations;update-an-employee-details",
         "keyword": "Scenario Outline",
-        "line": 36,
+        "line": 40,
         "name": "Update an employee details",
         "steps": [
           {
@@ -210,41 +249,54 @@
               }
             ],
             "keyword": "Given ",
-            "line": 28,
+            "line": 31,
             "name": "I make a update call for employee \"21\" with details",
             "match": {
-              "location": "features\\step-definitions\\steps.js:54"
+              "location": "features\\step-definitions\\steps.js:51"
             },
             "result": {
               "status": "passed",
-              "duration": 1461047899
+              "duration": 1320974099
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 32,
+            "line": 35,
             "name": "The call completes",
             "match": {
               "location": "features\\step-definitions\\steps.js:17"
             },
             "result": {
               "status": "passed",
-              "duration": 10015324799
+              "duration": 289300
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 33,
+            "line": 36,
             "name": "The employee \"21\" gets updated",
             "match": {
-              "location": "features\\step-definitions\\steps.js:58"
+              "location": "features\\step-definitions\\steps.js:55"
             },
             "result": {
               "status": "failed",
-              "duration": 653999,
-              "error_message": "AssertionError: expected 429 to equal 'success'\n    at World.<anonymous> (C:\\Users\\Deepa\\Workspace\\API Testing\\features\\step-definitions\\steps.js:59:35)"
+              "duration": 271300,
+              "error_message": "AssertionError: expected 429 to equal 'success'\n    at World.<anonymous> (C:\\Users\\Deepa\\Workspace\\API Testing\\features\\step-definitions\\steps.js:56:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "I wait for \"10\" seconds before next call",
+            "match": {
+              "location": "features\\step-definitions\\steps.js:59"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
             }
           }
         ],
@@ -255,47 +307,47 @@
         "description": "",
         "id": "to-test-the-api-crud-operations;delete-an-employee",
         "keyword": "Scenario Outline",
-        "line": 44,
+        "line": 48,
         "name": "Delete an employee",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 39,
+            "line": 43,
             "name": "I make a delete call with emp id as \"2\"",
             "match": {
-              "location": "features\\step-definitions\\steps.js:46"
+              "location": "features\\step-definitions\\steps.js:43"
             },
             "result": {
               "status": "passed",
-              "duration": 1234991599
+              "duration": 1235949599
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 40,
+            "line": 44,
             "name": "The call completes",
             "match": {
               "location": "features\\step-definitions\\steps.js:17"
             },
             "result": {
               "status": "passed",
-              "duration": 10009304900
+              "duration": 506599
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 41,
+            "line": 45,
             "name": "I get the success response",
             "match": {
-              "location": "features\\step-definitions\\steps.js:50"
+              "location": "features\\step-definitions\\steps.js:47"
             },
             "result": {
               "status": "failed",
-              "duration": 543600,
-              "error_message": "AssertionError: expected 429 to equal 'success'\n    at World.<anonymous> (C:\\Users\\Deepa\\Workspace\\API Testing\\features\\step-definitions\\steps.js:51:35)"
+              "duration": 1911700,
+              "error_message": "AssertionError: expected 429 to equal 'success'\n    at World.<anonymous> (C:\\Users\\Deepa\\Workspace\\API Testing\\features\\step-definitions\\steps.js:48:35)"
             }
           }
         ],
