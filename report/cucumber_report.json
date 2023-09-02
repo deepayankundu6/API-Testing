@@ -1,0 +1,313 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "to-test-the-api-crud-operations;get-all-employee-details",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Get all employee details",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I make a get all call",
+            "match": {
+              "location": "features\\step-definitions\\steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1330917199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "The call completes",
+            "match": {
+              "location": "features\\step-definitions\\steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10004180500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I get all the data returned from the API",
+            "match": {
+              "location": "features\\step-definitions\\steps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1617799
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "to-test-the-api-crud-operations;get-employee-details-by-employee-id",
+        "keyword": "Scenario Outline",
+        "line": 14,
+        "name": "Get employee details by employee id",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I make a get all call with emp id as \"1\"",
+            "match": {
+              "location": "features\\step-definitions\\steps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1122838800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "The call completes",
+            "match": {
+              "location": "features\\step-definitions\\steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10013738700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I get the employee details for the emp no \"1\"",
+            "match": {
+              "location": "features\\step-definitions\\steps.js:32"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2660199,
+              "error_message": "AssertionError: expected 429 to equal 'success'\n    at World.<anonymous> (C:\\Users\\Deepa\\Workspace\\API Testing\\features\\step-definitions\\steps.js:33:35)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "to-test-the-api-crud-operations;create-a-new-employee",
+        "keyword": "Scenario Outline",
+        "line": 25,
+        "name": "Create a new employee",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "test"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "salary",
+                      "1123"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "age",
+                      "29"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "I make a create call with employee details",
+            "match": {
+              "location": "features\\step-definitions\\steps.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1068032499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "The call completes",
+            "match": {
+              "location": "features\\step-definitions\\steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10006637599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "The new employee gets created",
+            "match": {
+              "location": "features\\step-definitions\\steps.js:41"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 966099,
+              "error_message": "AssertionError: expected 429 to equal 'success'\n    at World.<anonymous> (C:\\Users\\Deepa\\Workspace\\API Testing\\features\\step-definitions\\steps.js:42:35)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "to-test-the-api-crud-operations;update-an-employee-details",
+        "keyword": "Scenario Outline",
+        "line": 36,
+        "name": "Update an employee details",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "test"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "salary",
+                      "1123"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "age",
+                      "29"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 28,
+            "name": "I make a update call for employee \"21\" with details",
+            "match": {
+              "location": "features\\step-definitions\\steps.js:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1461047899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "The call completes",
+            "match": {
+              "location": "features\\step-definitions\\steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10015324799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "The employee \"21\" gets updated",
+            "match": {
+              "location": "features\\step-definitions\\steps.js:58"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 653999,
+              "error_message": "AssertionError: expected 429 to equal 'success'\n    at World.<anonymous> (C:\\Users\\Deepa\\Workspace\\API Testing\\features\\step-definitions\\steps.js:59:35)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "to-test-the-api-crud-operations;delete-an-employee",
+        "keyword": "Scenario Outline",
+        "line": 44,
+        "name": "Delete an employee",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 39,
+            "name": "I make a delete call with emp id as \"2\"",
+            "match": {
+              "location": "features\\step-definitions\\steps.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1234991599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "The call completes",
+            "match": {
+              "location": "features\\step-definitions\\steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10009304900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "I get the success response",
+            "match": {
+              "location": "features\\step-definitions\\steps.js:50"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 543600,
+              "error_message": "AssertionError: expected 429 to equal 'success'\n    at World.<anonymous> (C:\\Users\\Deepa\\Workspace\\API Testing\\features\\step-definitions\\steps.js:51:35)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "to-test-the-api-crud-operations",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "To test the API CRUD operations",
+    "tags": [],
+    "uri": "features\\api.feature"
+  }
+]

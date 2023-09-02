@@ -1,14 +1,20 @@
 const { expect } = require('chai');
-const { Given, When, Then } = require('@cucumber/cucumber');
+const { Given, When, Then, setDefaultTimeout } = require('@cucumber/cucumber');
 const { getRequest, postRequest, putRequest, deleteRequest } = require('../../crud');
 let apiResponse = '';
+const delay = (time) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(resolve, time)
+    })
+}
+
+setDefaultTimeout(50000);
 
 Given('I make a get all call', async () => {
     apiResponse = await getRequest('https://dummy.restapiexample.com/api/v1/employees');
 });
 
-When('The call completes', () => {
-
+When('The call completes', async () => {
 });
 
 Then('I get all the data returned from the API', () => {
@@ -49,3 +55,8 @@ Given('I make a update call for employee {string} with details', async (empNo, e
 Then('The employee {string} gets updated', (empNo) => {
     expect(apiResponse.status).to.eq("success")
 });
+
+Then('I wait for {string} seconds before next call', async (time) => {
+    const actualTime = time * 1000;
+    await delay(actualTime)
+})

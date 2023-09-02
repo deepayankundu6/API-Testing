@@ -4,6 +4,7 @@ Feature: To test the API CRUD operations
         Given I make a get all call
         When The call completes
         Then I get all the data returned from the API
+        And I wait for "10" seconds before next call
 
     Scenario Outline: Get employee details by employee id
         Given I make a get all call with emp id as "<emp_id>"
@@ -12,6 +13,7 @@ Feature: To test the API CRUD operations
         Examples:
             | emp_id |
             | 1      |
+        And I wait for "10" seconds before next call
 
     Scenario Outline: Create a new employee
         Given I make a create call with employee details
@@ -23,6 +25,7 @@ Feature: To test the API CRUD operations
         Examples:
             | Name | Salary | Age |
             | test | 1123   | 29  |
+        And I wait for "10" seconds before next call
 
     Scenario Outline: Update an employee details
         Given I make a update call for employee "<id>" with details
@@ -34,6 +37,7 @@ Feature: To test the API CRUD operations
         Examples:
             | Name | Salary | Age | id |
             | test | 1123   | 29  | 21 |
+        And I wait for "10" seconds before next call
 
     Scenario Outline: Delete an employee
         Given I make a delete call with emp id as "<emp_id>"
