@@ -11,6 +11,7 @@
   "dependencies": {
     "@cucumber/cucumber": "^9.4.0",
     "chai": "^4.3.8",
-    "fetch": "^1.1.0"
+    "fetch": "^1.1.0",
+    "node-fetch": "^2.7.0"
   }
 }
