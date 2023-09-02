@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1248474599
+              "duration": 1318359700
             }
           },
           {
@@ -32,7 +32,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 118699
+              "duration": 165799
             }
           },
           {
@@ -44,8 +44,9 @@
               "location": "features\\step-definitions\\steps.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 879399
+              "status": "failed",
+              "duration": 1452699,
+              "error_message": "AssertionError: expected 429 to equal 'success'\n    at World.<anonymous> (C:\\Users\\Deepa\\Workspace\\API Testing\\features\\step-definitions\\steps.js:21:35)"
             }
           },
           {
@@ -57,8 +58,8 @@
               "location": "features\\step-definitions\\steps.js:59"
             },
             "result": {
-              "status": "passed",
-              "duration": 10013354699
+              "status": "skipped",
+              "duration": 0
             }
           }
         ],
@@ -82,7 +83,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1153516699
+              "duration": 1220482400
             }
           },
           {
@@ -95,7 +96,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 92600
+              "duration": 169900
             }
           },
           {
@@ -108,7 +109,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 812700,
+              "duration": 487900,
               "error_message": "AssertionError: expected 429 to equal 'success'\n    at World.<anonymous> (C:\\Users\\Deepa\\Workspace\\API Testing\\features\\step-definitions\\steps.js:30:35)"
             }
           },
@@ -169,7 +170,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1035372800
+              "duration": 1175502900
             }
           },
           {
@@ -182,7 +183,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 158299
+              "duration": 100199
             }
           },
           {
@@ -195,7 +196,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 481299,
+              "duration": 201999,
               "error_message": "AssertionError: expected 429 to equal 'success'\n    at World.<anonymous> (C:\\Users\\Deepa\\Workspace\\API Testing\\features\\step-definitions\\steps.js:39:35)"
             }
           },
@@ -256,7 +257,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1158073600
+              "duration": 1037393699
             }
           },
           {
@@ -269,7 +270,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 535599
+              "duration": 270199
             }
           },
           {
@@ -282,7 +283,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 429700,
+              "duration": 322500,
               "error_message": "AssertionError: expected 429 to equal 'success'\n    at World.<anonymous> (C:\\Users\\Deepa\\Workspace\\API Testing\\features\\step-definitions\\steps.js:56:35)"
             }
           },
@@ -320,7 +321,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1285666000
+              "duration": 1233745899
             }
           },
           {
@@ -333,7 +334,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 380599
+              "duration": 129799
             }
           },
           {
@@ -346,7 +347,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 1124300,
+              "duration": 273299,
               "error_message": "AssertionError: expected 429 to equal 'success'\n    at World.<anonymous> (C:\\Users\\Deepa\\Workspace\\API Testing\\features\\step-definitions\\steps.js:48:35)"
             }
           }
