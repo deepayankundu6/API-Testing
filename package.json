@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cucumber-js features/ -f json:report/cucumber_report.json && node reporter.js"
+    "start":"npm test",
+    "test": "npx cucumber-js features/ -f json:report/cucumber_report.json && node reporter.js",
+    "reporter":"node reporter.js"
   },
   "author": "",
   "license": "ISC",
