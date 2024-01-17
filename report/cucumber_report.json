@@ -15,11 +15,11 @@
             "line": 4,
             "name": "I make a get all call",
             "match": {
-              "location": "features\\step-definitions\\steps.js:13"
+              "location": "features\\step-definitions\\steps.js:14"
             },
             "result": {
               "status": "passed",
-              "duration": 1516234500
+              "duration": 272034000
             }
           },
           {
@@ -28,11 +28,11 @@
             "line": 5,
             "name": "I get all the data returned from the API",
             "match": {
-              "location": "features\\step-definitions\\steps.js:17"
+              "location": "features\\step-definitions\\steps.js:18"
             },
             "result": {
               "status": "passed",
-              "duration": 1312799
+              "duration": 671800
             }
           },
           {
@@ -41,11 +41,11 @@
             "line": 6,
             "name": "I wait for \"10\" seconds before next call",
             "match": {
-              "location": "features\\step-definitions\\steps.js:56"
+              "location": "features\\step-definitions\\steps.js:57"
             },
             "result": {
               "status": "passed",
-              "duration": 10000806399
+              "duration": 10013424900
             }
           }
         ],
@@ -65,11 +65,11 @@
             "line": 9,
             "name": "I make a get all call with emp id as \"1\"",
             "match": {
-              "location": "features\\step-definitions\\steps.js:22"
+              "location": "features\\step-definitions\\steps.js:23"
             },
             "result": {
               "status": "passed",
-              "duration": 1229073199
+              "duration": 308278800
             }
           },
           {
@@ -78,12 +78,11 @@
             "line": 10,
             "name": "I get the employee details for the emp no \"1\"",
             "match": {
-              "location": "features\\step-definitions\\steps.js:26"
+              "location": "features\\step-definitions\\steps.js:27"
             },
             "result": {
-              "status": "failed",
-              "duration": 1079799,
-              "error_message": "AssertionError: expected 429 to equal 'success'\n    at World.<anonymous> (C:\\Users\\Deepa\\Workspace\\API Testing\\features\\step-definitions\\steps.js:27:35)"
+              "status": "passed",
+              "duration": 478000
             }
           },
           {
@@ -92,11 +91,11 @@
             "line": 11,
             "name": "I wait for \"10\" seconds before next call",
             "match": {
-              "location": "features\\step-definitions\\steps.js:56"
+              "location": "features\\step-definitions\\steps.js:57"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 10002858800
             }
           }
         ],
@@ -139,11 +138,11 @@
             "line": 17,
             "name": "I make a create call with employee details",
             "match": {
-              "location": "features\\step-definitions\\steps.js:31"
+              "location": "features\\step-definitions\\steps.js:32"
             },
             "result": {
               "status": "passed",
-              "duration": 416409200
+              "duration": 1633355199
             }
           },
           {
@@ -152,12 +151,12 @@
             "line": 21,
             "name": "The new employee gets created",
             "match": {
-              "location": "features\\step-definitions\\steps.js:35"
+              "location": "features\\step-definitions\\steps.js:36"
             },
             "result": {
               "status": "failed",
-              "duration": 417499,
-              "error_message": "AssertionError: expected 429 to equal 'success'\n    at World.<anonymous> (C:\\Users\\Deepa\\Workspace\\API Testing\\features\\step-definitions\\steps.js:36:35)"
+              "duration": 756600,
+              "error_message": "AssertionError: expected 429 to equal 'success'\n    at World.<anonymous> (C:\\Users\\Deepa\\Workspace\\API Testing\\features\\step-definitions\\steps.js:37:35)"
             }
           },
           {
@@ -166,7 +165,7 @@
             "line": 22,
             "name": "I wait for \"10\" seconds before next call",
             "match": {
-              "location": "features\\step-definitions\\steps.js:56"
+              "location": "features\\step-definitions\\steps.js:57"
             },
             "result": {
               "status": "skipped",
@@ -213,11 +212,11 @@
             "line": 28,
             "name": "I make a update call for employee \"21\" with details",
             "match": {
-              "location": "features\\step-definitions\\steps.js:48"
+              "location": "features\\step-definitions\\steps.js:49"
             },
             "result": {
               "status": "passed",
-              "duration": 409767800
+              "duration": 961159800
             }
           },
           {
@@ -226,12 +225,11 @@
             "line": 32,
             "name": "The employee \"21\" gets updated",
             "match": {
-              "location": "features\\step-definitions\\steps.js:52"
+              "location": "features\\step-definitions\\steps.js:53"
             },
             "result": {
-              "status": "failed",
-              "duration": 334700,
-              "error_message": "AssertionError: expected 429 to equal 'success'\n    at World.<anonymous> (C:\\Users\\Deepa\\Workspace\\API Testing\\features\\step-definitions\\steps.js:53:35)"
+              "status": "passed",
+              "duration": 522600
             }
           },
           {
@@ -240,11 +238,11 @@
             "line": 33,
             "name": "I wait for \"10\" seconds before next call",
             "match": {
-              "location": "features\\step-definitions\\steps.js:56"
+              "location": "features\\step-definitions\\steps.js:57"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 10009995199
             }
           }
         ],
@@ -264,11 +262,11 @@
             "line": 39,
             "name": "I make a delete call with emp id as \"2\"",
             "match": {
-              "location": "features\\step-definitions\\steps.js:40"
+              "location": "features\\step-definitions\\steps.js:41"
             },
             "result": {
               "status": "passed",
-              "duration": 418092999
+              "duration": 1193246100
             }
           },
           {
@@ -277,12 +275,11 @@
             "line": 41,
             "name": "I get the success response",
             "match": {
-              "location": "features\\step-definitions\\steps.js:44"
+              "location": "features\\step-definitions\\steps.js:45"
             },
             "result": {
-              "status": "failed",
-              "duration": 711799,
-              "error_message": "AssertionError: expected 429 to equal 'success'\n    at World.<anonymous> (C:\\Users\\Deepa\\Workspace\\API Testing\\features\\step-definitions\\steps.js:45:35)"
+              "status": "passed",
+              "duration": 341300
             }
           }
         ],
